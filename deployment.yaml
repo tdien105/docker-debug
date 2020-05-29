@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: debug-shell
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: debug-shell
+  template:
+    metadata:
+      labels:
+        app: debug-shell
+    spec:
+      containers:
+      - name: debug-shell
+        image: tdien105/debug
+        imagePullPolicy: IfNotPresent
