@@ -7,6 +7,7 @@ Tool included
 - curl
 - telnet
 - net-tools
+- iputils-ping
 - dnsutils
 - vim
 - mysql-client
